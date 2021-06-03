@@ -9,5 +9,5 @@ function greet(name,callback){
 function callMe(){
     console.log("I am callback function");
 }
-
+//passing function as argument
 greet('Mansi',callMe);

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mostudio : Feedback</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+	<%- include('sidebar'); -%>
+	
+			<div id="colorlib-main">
+				<section class="ftco-section ftco-no-pt ftco-no-pb">
+					<div class="container px-md-0">
+						<div class="row d-flex no-gutters">
+							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<% if(db_rows_array.length > 0) { %>
+
+                                        <table id="t1"  >
+                                            <tr>
+                                                <!-- <th>Sr. no.</th> -->
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Rating</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            <% for(var i=0; i< db_rows_array.length;i++) { %>
+                                                <tr>
+                                                <!-- <td><%= db_rows_array[i].review_id %></td> -->
+                                                <td><%= db_rows_array[i].review_name %></td>
+                                                <td><%= db_rows_array[i].review_email %></td>
+                                                <td><%= db_rows_array[i].review_rating %></td>
+                                                <td> <a href='/edit/<%= db_rows_array[i].review_id %>'>Edit</a> |<a href='/delete/<%= db_rows_array[i].review_id %>'>Delete</a></td>
+                                                </tr>
+                                            <% } %>
+                                    
+                                        </table>
+
+                                        <a href="/feedback" value="Display" class="btn btn-primary"> Back To Submit </a> 
+                                    
+                                        <% }else{ %>
+                                            NO RECORDS FOUND !
+                                        <% } %>
+										</div>
+									</form>
+								</div>
+							</div>
+                        </section>
+                    </div><!-- END COLORLIB-MAIN -->
+                </div><!-- END COLORLIB-PAGE -->
+

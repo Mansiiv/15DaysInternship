@@ -8507,7 +8507,7 @@ h1, h2, h3, h4, h5,
             transform: scaleX(1); }
       #colorlib-aside #colorlib-main-menu ul li.colorlib-active {
         font-weight: 600; }
-        #colorlib-aside #colorlib-main-menu ul li.colorlib-active a {
+        #colorlib-aside #colorlib-main-menu ul li.colorlib-active a  {
           color: #f3c623; }
           #colorlib-aside #colorlib-main-menu ul li.colorlib-active a:after {
             visibility: visible;
@@ -8516,6 +8516,8 @@ h1, h2, h3, h4, h5,
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
+
+            
   #colorlib-aside .colorlib-footer {
     position: absolute;
     bottom: 20px;
@@ -9229,6 +9231,22 @@ textarea.form-control {
         .comment-list li .comment-body .reply:hover {
           color: #000000;
           background: #f3c623; }
+
+         
+table, th, td {
+  border: 1px solid #f5bb0d;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 7px;
+  text-align: center;
+  color: rgb(245, 236, 236);
+}
+#t1 {
+  width: 100%;    
+}
+
+tr:nth-child(even) {background-color: #302d2d;}
 
 #ftco-loader {
   position: fixed;

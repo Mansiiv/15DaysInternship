@@ -1,1 +1,1 @@
-# 15DaysInternship
+Implemented CRUD (Create, Read, Update, Delete) operations by establishing a connection to a MySQL database through XAMPP. Additionally, designed and integrated a rudimentary feedback table within the database and incorporated a corresponding feedback form on the website.
